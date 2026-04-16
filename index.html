@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ivan | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #556B2F;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 10%;
+      position: fixed;
+      width: 100%;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(10px);
+    }
+
+    header h1 {
+      color: #00ff88;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+    }
+
+    .hero span {
+      color: #00ff88;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #00ff88;
+      color: black;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #00cc66;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      flex: 1 1 250px;
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Ivan.dev</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Hi, I'm <span>Ivan</span></h2>
+  <p>I coding websites</p>
+  <button class="btn" onclick="scrollToSection()">Contact me</button>
+</div>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am a beginner developer focused on HTML, CSS and JavaScript.</p>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Landing Pages</h3>
+      <p>I create responsive landing pages.</p>
+    </div>
+    <div class="card">
+      <h3>Fix Bugs</h3>
+      <p>I fix HTML/CSS issues.</p>
+    </div>
+    <div class="card">
+      <h3>UI Improvements</h3>
+      <p>I improve website design.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Fitness Website</h3>
+      <p>Modern landing page for gym.</p>
+    </div>
+    <div class="card">
+      <h3>Portfolio</h3>
+      <p>Personal portfolio website.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Ivan</p>
+</footer>
+
+<script>
+  function scrollToSection() {
+    document.getElementById("about").scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+</script>
+
+</body>
+</html>
